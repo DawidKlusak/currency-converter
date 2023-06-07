@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.form {
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+    background-color: hsla(51, 96%, 57%, 0.31);
+}
+
+.form__legend {
+    font-style: italic;
+    font-size: 25px;
+    padding: 5px;
+    background-color: hsla(42, 96%, 57%, 0.662);
+    border-radius: 10px;
+    font-weight: 550;
+}
+
+.form__fieldset {
+    border-radius: 10px;
+    border: 3px dotted;
+    border-color: hsla(52, 56%, 45%, 0.714);
+    ;
+}
+
+.form__labelText {
+    width: 120px;
+    margin-bottom: 5px;
+    display: block;
+    margin-right: 5px;
+}
+
+.form__field {
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(52, 56%, 45%);
+}
+
+.form__field:invalid {
+    background-color: rgb(255, 0, 0);
+}
+
+.form__field:focus {
+    outline: none;
+}
+
+.form__button {
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    padding: 8px;
+    background-color: hsl(52, 56%, 55%);
+}
+
+.form__button:hover {
+    background-color: hsl(52, 56%, 65%);
+    ;
+}
+
+.form__button:active {
+    background-color: hsl(52, 56%, 75%);
+}
+
+.form__paragraph {
+    position: absolute;
+    font-size: small;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.form__paragraph--strong {
+    font-size: 20px;
+}
