@@ -65,7 +65,9 @@
     position: absolute;
     font-size: small;
     max-width: 800px;
-    padding: 10px;
+    color: hsl(117deg 36% 28.57%);
+    background-color: hsl(52, 56%, 75%);
+
 }
 
 .form__paragraph--strong {
