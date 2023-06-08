@@ -37,7 +37,7 @@
 }
 
 .form__field:invalid {
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(183, 70, 70, 0.467);
 }
 
 .form__field:focus {
