@@ -1,9 +1,9 @@
 
 .form {
     max-width: 800px;
-    margin: auto;
+    margin: 40px auto;
     padding: 15px;
-    background-color: hsla(51, 96%, 57%, 0.31);
+    background-color: hsl(117, 36%, 33%)
 }
 
 .form__legend {
