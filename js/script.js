@@ -1,40 +1,53 @@
-let fieldsetElement = document.querySelector(".js-form");
-let currencyChoice = document.querySelector(".js-currency");
-let valueNumber = document.querySelector(".js-value");
-let currencyResult = document.querySelector(".js-result");
+{
+    const calculateResult = (value, currency) => {
+        const EUR = 4.51;
+        const USD = 4.19;
+        const CHF = 4.63;
+        const GBP = 5.25;
 
-let EUR = 4.51;
-let USD = 4.19;
-let CHF = 4.63;
-let GBP = 5.25;
+        switch (currency) {
+            case "EUR":
+                return value / EUR;
 
-fieldsetElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+            case "USD":
+                return value / USD;
 
-    let currency = currencyChoice.value;
-    let value = valueNumber.value;
-    let result = currencyResult.value;
+            case "CHF":
+                return value / CHF;
 
-    switch (currency) {
-        case "EUR":
-            result = value / EUR;
-            break;
+            case "GBP":
+                return value / GBP;
+        }
+    };
 
-        case "USD":
-            result = value / USD;
-            break;
-
-        case "CHF":
-            result = value / CHF;
-            break;
-
-        case "GBP":
-            result = value / GBP;
-            break;
+    const updateResultText = (value, result, currency) => {
+        const currencyResult = document.querySelector(".js-result");
+        currencyResult.innerText = `${result.toFixed(2)} ${currency}`;
     }
 
-    currencyResult.innerText = `${result.toFixed(2)} ${currency}`;
-});
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+
+        const currencyChoice = document.querySelector(".js-currency");
+        const valueNumber = document.querySelector(".js-value");
+
+        const currency = currencyChoice.value;
+        const value = valueNumber.value;
+
+        const result = calculateResult(value, currency);
+
+        updateResultText(value, result, currency)
+    };
+
+    const init = () => {
+        const fieldsetElement = document.querySelector(".js-form");
+        fieldsetElement.addEventListener("submit", onFormSubmit)
+    };
+
+    init()
+}
+
+
 
 
 
