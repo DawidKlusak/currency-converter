@@ -4,6 +4,7 @@
 Hi! This is a simple currency converter which I created as a part of coding course where I learning forms in Java Script.
 
 The user can choose from following currencies: PLN, EUR, GBP, CHF and USD.
+Besides technologies i showed below, i used: BEM, JavaScript ES+6, and normalize.css. That helps me make my project more responisve and clearly.
 
 ## Demo
 
@@ -11,11 +12,14 @@ The user can choose from following currencies: PLN, EUR, GBP, CHF and USD.
 
 ## Preview
 
-![currency-converter preview](images/readme-review.gif)
+![currency-converter preview](images/Animation.gif)
+
+When you write a amout in polish zloty in input and press a beige button "Przelicz" you get how much money you should get in chosen currency.
+Keep it simple.
 
 ## Technologies
 Project is created with:
 
-![css badge](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
-![html badge](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
-![js badge](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![html badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![css badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![js badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
